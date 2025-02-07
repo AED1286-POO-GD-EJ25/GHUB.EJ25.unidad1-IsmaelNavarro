@@ -1,2 +1,3 @@
+./miTest/Alumno.java
 ./miTest/AppTest.java
 ./miPrincipal/Principal.java

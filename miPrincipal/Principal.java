@@ -1,13 +1,23 @@
 package miPrincipal;
 
+import miTest.Alumno;
+
 public class Principal {
-    public String getGreeting() {
-        return "Hola Guapos, unas tortugas oq!";
-    }
+   
 
     public static void main(String[] args) {
-        Principal principal = new Principal();
-        String saludo = principal.getGreeting();
-        System.out.println(new Principal().getGreeting());
+
+     Alumno alumno1 = new Alumno();
+     Alumno alumno2 = new Alumno("Juan", 24170650, 95, "Sistemas");
+
+
+     
+     alumno1.cargarMaterias();
+
+     alumno2.cargarMaterias();
+
+     double prom = alumno2.obtenerPromedio(95);
+
+     System.out.println("El promedio = "+prom);
     }
 }
