@@ -7,6 +7,7 @@ public class Alumno {
     String carrera;
 
     public Alumno(){
+        
 
     }
 
@@ -17,6 +18,20 @@ public class Alumno {
         this.carrera = carrera;
 
     }
+    public void cargarMateria(){
+        System.out.println("Estoy cargando materias ");
+    }
+
+    public boolean modificarStatus(){
+        return true;
+    }
     
+    public void revisarHistorial(){
+        System.out.println("Estoy revisando mi historial ");
+    }
+
+    public double obtenerPromedio(){
+        return this.promedio;
+    }
 
 }
